@@ -27,34 +27,22 @@ public class Main {
 		
 }
 
-
 class Pal {
 	
 	public Pal(ArrayList<Character> l) {		
-		
 		System.out.println(palindrome(l,0));
-
 	}
 
 	private boolean palindrome(ArrayList<Character> l, int i) {
-		
 		int index = i;
 		
 		if (i<l.size()/2){
-				
 			if (palindrome(l,++i))
-		
 				return l.get(l.size()-index-1).equals(l.get(index));
-		
 			else
-			
 				return false;
 		}
-		
 		else
-			
 			return true;
-					
 	}
-	
 }
